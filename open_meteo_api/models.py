@@ -20,7 +20,7 @@ class Alert(models.Model):
     temperature = models.FloatField(verbose_name='Temperatura')
     message = models.TextField(verbose_name='Mensagem')
     active = models.BooleanField(default=True, verbose_name='Ativo')
-    email = models.CharField(max_length=50, null=True, blank=True, verbose_name='E-mail')
+    email = models.EmailField(blank=True, verbose_name='E-mail')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Criado em')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Alterado em')
 
