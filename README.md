@@ -1,7 +1,8 @@
-# Clima App 
+# Clima App 🌥️
 ##### Sistema de consulta, registro e notificação de temperatura de cidades.
 
 ###### Este sistema foi desenvolvido em Python + Django + Celery
+<br>
 
 ### Como rodar o projeto: 
 
@@ -34,10 +35,21 @@
 
 Acessando o localhost http://127.0.0.1:8000/admin:
 
-> Em `PERIODIC TASKS > Periodic Tasks` criar tasks no intervalo desejado
+
+Em `PERIODIC TASKS > Periodic Tasks`:
+
+Criar tasks no intervalo desejado
+
+Passar como parâmetro a cidade desejada em `Arguments > Positional Arguments` e salvar
+=======
+> Acessando o localhost https://127.0.0.1:8000/admin
+
+> Em `PERIODIC TASKS > Periodic Tasks`
+
+> Criar tasks no intervalo desejado
+>>>>>>> 64936ffdc5e0fd8c091366032c1cb9fd23b91632
 
 > Passar como parâmetro a cidade desejada em `Arguments > Positional Arguments` e salvar
-
 
 ### Configurando o SMTP para envio de e-mails:
 
@@ -49,11 +61,9 @@ Acessando o localhost http://127.0.0.1:8000/admin:
 
 Que pode ser obtido nas configurações de segurança da conta do Gmail: `Segurança > Senhas de Apps`
 
-
 ### Subindo o gerenciador de tarefas (Celery):
 
 *Pré-requisito: ter o Docker instalado na máquina*
-
 
 * Criando o container do broker RabbitMQ:
 
@@ -72,5 +82,6 @@ Que pode ser obtido nas configurações de segurança da conta do Gmail: `Segura
 > `python manage.py test`
 
 ###### Por fim, caso a temperatura de uma cidade ultrapasse o limite estabelecido, o usuário será notificado por email.
+
 
 
