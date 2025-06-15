@@ -1,4 +1,3 @@
-import ipdb
 from django.test import TestCase
 from unittest.mock import patch
 from open_meteo_api.tasks import register_alert
@@ -32,8 +31,8 @@ class RegisterAlertTestCase(TestCase):
             operator = '>',
             active = True,
         )
-        result = register_alert.delay("São Paulo").get()
-        ipdb.set_trace()
+        result = register_alert("São Paulo")
+
 
         assert result > 30
         mock_send_mail.assert_not_called()
