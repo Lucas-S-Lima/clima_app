@@ -32,22 +32,13 @@
 
 * Diretamente no painel administrativo do Django:
 
-Acessando o localhost https://127.0.0.1:8000/admin:
+> Acessando o localhost https://127.0.0.1:8000/admin
 
-![Localhost](./media/Captura%20de%20tela%20de%202025-06-15%2015-30-49.png)
+> Em `PERIODIC TASKS > Periodic Tasks`
 
-Em `PERIODIC TASKS > Periodic Tasks`:
+> Criar tasks no intervalo desejado
 
-![PeriodicTask](./media/Captura%20de%20tela%20de%202025-06-15%2015-33-12.png)
-
-Criar tasks no intervalo desejado
-
-![PeriodicTask](./media/Captura%20de%20tela%20de%202025-06-15%2015-40-30.png)
-
-Passar como parâmetro a cidade desejada em `Arguments > Positional Arguments` e salvar:
-
-![PositionalArg](./media/Captura%20de%20tela%20de%202025-06-15%2016-05-47.png)
-
+> Passar como parâmetro a cidade desejada em `Arguments > Positional Arguments` e salvar
 
 ### Configurando o SMTP para envio de e-mails:
 
