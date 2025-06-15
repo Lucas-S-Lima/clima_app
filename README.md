@@ -1,4 +1,4 @@
-# Clima App 
+# Clima App 🌥️
 ##### Sistema de consulta, registro e notificação de temperatura de cidades.
 
 ###### Este sistema foi desenvolvido em Python + Django + Celery
