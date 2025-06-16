@@ -29,27 +29,18 @@
 
 > `python manage.py runserver`
 
-### Configurando o alerta de notificações
+### Configurando o alerta de notificações:
 
 * Diretamente no painel administrativo do Django:
 
 Acessando o localhost http://127.0.0.1:8000/admin:
 
 
-Em `PERIODIC TASKS > Periodic Tasks`:
+Em `PERIODIC TASKS > Periodic Tasks > Add periodic task`:
 
-Criar tasks no intervalo desejado
+> Configurar intervalo desejado em `Schedule > Interval Schedule`
 
-Passar como parâmetro a cidade desejada em `Arguments > Positional Arguments` e salvar
-=======
-> Acessando o localhost https://127.0.0.1:8000/admin
-
-> Em `PERIODIC TASKS > Periodic Tasks`
-
-> Criar tasks no intervalo desejado
->>>>>>> 64936ffdc5e0fd8c091366032c1cb9fd23b91632
-
-> Passar como parâmetro a cidade desejada em `Arguments > Positional Arguments` e salvar
+> Passar como parâmetro a cidade desejada em `Arguments > Positional Arguments`
 
 ### Configurando o SMTP para envio de e-mails:
 
