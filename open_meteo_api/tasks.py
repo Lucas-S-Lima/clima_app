@@ -28,32 +28,32 @@ def register_alert(name_city):
     for alert in alerts:
         if (temperature.temperature > alert.temperature) and (alert.operator == '>'):
 
-            logger.warning('Temperatura subindo.')
+            logger.warning('Temperatura subindo')
 
             send_mail(
-                "Alerta de onda de calor.",
+                "Alerta de onda de calor",
                 alert.message,
                 "2ucas2ima@gmail.com",
                 [alert.email],
                 fail_silently=False,
             )
 
-            logger.info(f'Email enviado com sucesso para a cidade de {city}.')
+            logger.info(f'Email enviado com sucesso para a cidade de {city}')
 
             
         elif (temperature.temperature < alert.temperature) and (alert.operator == '<'):
 
-            logger.warning('Temperatura caindo.')
+            logger.warning('Temperatura caindo')
 
             send_mail(
-                "Alerta de frente fria.",
+                "Alerta de frente fria",
                 alert.message,
                 "2ucas2ima@gmail.com",
                 [alert.email],
                 fail_silently=False,
             )
 
-            logger.info(f'Email enviado com sucesso para a cidade de {city}.')
+            logger.info(f'Email enviado com sucesso para a cidade de {city}')
 
     return float(current_temperature)
     
