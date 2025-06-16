@@ -8,6 +8,7 @@ from celery import shared_task
 
 logger = logging.getLogger(__name__)
 
+
 @shared_task
 def register_alert(name_city):
 
@@ -39,8 +40,7 @@ def register_alert(name_city):
             )
 
             logger.info(f'Email enviado com sucesso para a cidade de {city}')
-
-            
+    
         elif (temperature.temperature < alert.temperature) and (alert.operator == '<'):
 
             logger.warning('Temperatura caindo')
@@ -56,9 +56,3 @@ def register_alert(name_city):
             logger.info(f'Email enviado com sucesso para a cidade de {city}')
 
     return float(current_temperature)
-    
-    
-
-
-
-

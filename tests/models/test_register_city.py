@@ -6,5 +6,5 @@ class CityModelTestCase(TestCase):
     
     def test_register_city(self):
     
-        city = City.objects.create(city = 'Teste')
+        city = City.objects.create(city='Teste')
         self.assertEqual(city.city, 'Teste')

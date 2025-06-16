@@ -6,9 +6,10 @@ import requests
    Entrada: cidade -> Saída: latitude, longitude
 """
 
+
 def get_coordinates_from_city(name_city):
 
-    url = f'https://nominatim.openstreetmap.org/search'
+    url = 'https://nominatim.openstreetmap.org/search'
     params = {
         "q": name_city,
         "format": "json",

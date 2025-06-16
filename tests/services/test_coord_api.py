@@ -18,7 +18,6 @@ class GetCoordinatesTestCase(TestCase):
         
         city = "São Paulo"
         
-
         result = get_coordinates_from_city(city)
 
         self.assertEqual(result[0], '-23.540')

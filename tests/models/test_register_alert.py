@@ -5,15 +5,15 @@ from open_meteo_api.models import Alert, City
 class AlertModelTestCase(TestCase):
 
     def test_register_alert(self):
-        city = City.objects.create(city = 'Teste')
+        city = City.objects.create(city='Teste')
         
         alert = Alert.objects.create(
-            city = city,
-            operator = '>',
-            temperature = 36,
-            message = 'Alerta de tempo quente!',
-            active = True,
-            email = 'email@test.com',
+            city=city,
+            operator='>',
+            temperature=36,
+            message='Alerta de tempo quente!',
+            active=True,
+            email='email@test.com',
 
         )
 
@@ -23,5 +23,3 @@ class AlertModelTestCase(TestCase):
         self.assertEqual(alert.message, 'Alerta de tempo quente!')
         self.assertTrue(alert.active)
         self.assertEqual(alert.email, 'email@test.com')
-
-

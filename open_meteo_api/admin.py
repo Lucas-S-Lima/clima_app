@@ -13,7 +13,8 @@ class AlertAdmin(admin.ModelAdmin):
     list_display = ['city', 'operator', 'temperature', 'message', 'created_at', 'active'] 
     search_fields = ['city', 'operator', 'temperature']
 
+
 @admin.register(Temperature)
-class CityAdmin(admin.ModelAdmin):
+class TemperatureAdmin(admin.ModelAdmin):
     list_display = ['temperature', 'city', 'created_at']
     search_fields = ['temperature', 'city']
