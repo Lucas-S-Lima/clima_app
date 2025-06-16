@@ -33,8 +33,6 @@ class RegisterAlertTestCase(TestCase):
         )
         result = register_alert("São Paulo")
 
-        result = register_alert.delay("São Paulo").get()
-
         assert result > 30
         mock_send_mail.assert_not_called()
     
