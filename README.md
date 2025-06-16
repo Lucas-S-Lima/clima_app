@@ -62,7 +62,7 @@ Que pode ser obtido nas configurações de segurança da conta do Gmail: `Segura
 
 * Subindo o worker do celery + celery beat:
 
-> `celery -A clima_app -l INFO -B`
+> `celery -A app -l INFO -B`
 
 * Os logs poderão ser visualizados no terminal ou no painel administrativo em `CELERY RESULTS > Task results`
 
