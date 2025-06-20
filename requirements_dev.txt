@@ -2,3 +2,4 @@ flake8==7.2.0
 ipdb==0.13.13
 django-extensions==4.1
 pipdeptree==2.26.1
+coverage==7.9.1
